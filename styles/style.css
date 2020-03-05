@@ -1,0 +1,32 @@
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  
+}
+
+header p {
+  margin: 10px;
+}
+
+#menu {
+  margin-left: auto;
+  ;
+}
+
+nav li {
+  display: inline;
+  margin: 10px;
+}
+
+nav li a {
+  color: black;    
+  text-decoration: none; /* Убирает подчеркивание для ссылок */
+      
+}
+nav li a:hover { 
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: blueviolet; /* Ссылка фиолето-синего цвета */
+   }
+}
+

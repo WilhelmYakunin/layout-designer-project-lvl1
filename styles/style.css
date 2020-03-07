@@ -1,8 +1,16 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 header {
+  margin-top: 0px;
+  background-color: white;
+  width: 100%;
+  padding: 5px;
   height: 50px;
   display: flex;
   align-items: center;
-  
 }
 
 header p {
@@ -11,7 +19,6 @@ header p {
 
 #menu {
   margin-left: auto;
-  ;
 }
 
 nav li {
@@ -22,11 +29,36 @@ nav li {
 nav li a {
   color: black;    
   text-decoration: none; /* Убирает подчеркивание для ссылок */
-      
 }
+
 nav li a:hover { 
     text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
     color: blueviolet; /* Ссылка фиолето-синего цвета */
    }
+
+main .banner {
+  height: 40vmax;
+  background-image: url('banner.png');
+  background-size: 100%;
+  background-position: 50% 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.bannertext {
+  text-align: center;
+  line-height: 0.5;
+  color: white;
+}
+
+main button {
+  padding: 5px 15px 5px;
+  background-color: transparent;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: inset;
+  color: white;
+  
+}

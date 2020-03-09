@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  font-size: 14px;
 }
 
 header {
@@ -60,5 +61,62 @@ main button {
   border-width: 1px;
   border-style: inset;
   color: white;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   
+}
+
+section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+article {
+  display: inline-block;
+  width: 333px;
+  height: auto;
+}
+
+article h2 {
+  padding: 0px;
+}
+
+.firstAbout {
+  background-color:#f7f7f7;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.firstAbout img {
+  padding: 45px;
+  width: 27%;
+  height: auto;
+}
+
+.firstAbout article {
+  margin: 25px;
+}
+
+.placesToRest {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.placesToRest img {
+  padding: 45px;
+  width: 27%;
+  height: auto;
+}
+
+.placesToRest article {
+  margin: 25px;
 }

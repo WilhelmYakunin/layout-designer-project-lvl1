@@ -27,12 +27,12 @@ nav li {
   margin: 10px;
 }
 
-nav li a {
+li a {
   color: black;    
   text-decoration: none; /* Убирает подчеркивание для ссылок */
 }
 
-nav li a:hover { 
+li a:hover { 
     text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
     color: blueviolet; /* Ссылка фиолето-синего цвета */
    }
@@ -121,11 +121,6 @@ article h2 {
   margin: 25px;
 }
 
-li {
-  list-style-type: none; /* Убираем маркеры */
-
- }
-
  #wraper {
   padding: 20px;
   width: 100%;
@@ -139,7 +134,7 @@ li {
   flex-direction: column;
 }
 
-ul {
+main ul {
   padding-inline-start: 0px;
 }
 
@@ -147,8 +142,9 @@ ul {
   margin-right: 35px;
 }
 
-li {
+main li {
   margin: 5px;
+  list-style-type: none; /* Убираем маркеры */
   display: flex;
   justify-content: space-between;
 }
@@ -190,3 +186,35 @@ input {
   color:#2ab99d;
   border-color: #6cf8dc;
 }
+
+footer {
+  padding: 25px 15px 15px;
+  color: white;
+  background-color: #303846;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  margin-block-start: 0.5em;
+}
+
+footer li a {
+  color: white;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  margin: 10px;
+}
+

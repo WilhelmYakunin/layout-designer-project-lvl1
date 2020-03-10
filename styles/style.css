@@ -86,7 +86,7 @@ article h2 {
   padding: 0px;
 }
 
-.firstAbout {
+.first-about {
   background-color:#f7f7f7;
   padding: 20px;
   display: flex;
@@ -94,30 +94,30 @@ article h2 {
   justify-content: center;
 }
 
-.firstAbout img {
+.first-about img {
   padding: 45px;
   width: 27%;
   height: auto;
 }
 
-.firstAbout article {
+.first-about article {
   margin: 25px;
 }
 
-.placesToRest {
+.places-to-rest {
   padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.placesToRest img {
+.places-to-rest img {
   padding: 45px;
   width: 27%;
   height: auto;
 }
 
-.placesToRest article {
+.places-to-rest article {
   margin: 25px;
 }
 
@@ -138,7 +138,7 @@ main ul {
   padding-inline-start: 0px;
 }
 
-.firstLabel {
+.first-label {
   margin-right: 35px;
 }
 

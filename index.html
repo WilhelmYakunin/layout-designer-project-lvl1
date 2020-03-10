@@ -16,7 +16,6 @@
         <img src="images/logo.svg" alt="логотип сайта" height="32px" width="32px"> <!-- Логтотип сайта -->
         <p>Лунное море</p>
         
-
         <nav id="menu"> <!-- Меню -->
             <ul>
                 <li><a href="">Преимущества</a></li>
@@ -33,7 +32,7 @@
                 <h1>ЖК &laquoЛунное море&raquo</h1>
                 <h4>Место, откуда не хочется улетать</h4>
             </div>
-            <button>Забронировать</button>
+            <button onclick="location.href='#feadback'" type="button">Забронировать</button>
         </div>
 
         <div class="mainContent">
@@ -60,7 +59,7 @@
             </div>
         </div>
 
-        <div class="aboutJG">
+        <div class="aboutJK">
             <section class="firstAbout">
                 <article>
                     <h2>О ЖК «Лунное море»</h2>
@@ -84,6 +83,42 @@
                 </article>
              </section>
         </div>
+        <div id = "wraper">
+            <div class="forms" id="feadback">
+                <p><b>Оставьте заявку сегодня!</b></p>
+                <form autocomplete="on" method="POST" name="feadback">
+                    <fieldset>
+                        <legend>Параметры квартиры</legend>
+                        <ul>
+                            <li><label class="firstLabel" for="Quantity-of-appartment">Количество комнат:</label>
+                                <select size="1">
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                </select>
+                            </li>
+                            <li><label>Отделка:</label>
+                                <select size="1">
+                                    <option selected value="Without">Без отделки</option>
+                                    <option value="King">По-царски</option>
+                                    <option value="Quin">По-королевски</option>
+                                    </select>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Контактная информация</legend>
+                        <ul>
+                            <li>Имя: <input type =  "text" name = "firstname"></li>
+                            <li>Телефон: <input type =  "text" name = "phone"></li>
+                            <li>E-mail: <input type =  "email" name = "email"></li>
+                        </ul>                   
+                    </fieldset>
+                <button>Отправить</button>
+            </form>
+            </div>
+        </div>
+        
     </main>
 
     <footer>

@@ -39,7 +39,7 @@ li a:hover {
 
 main .banner {
   height: 40vmax;
-  background-image: url('banner.png');
+  background-image: url("../images/banner.png");
   background-size: 100%;
   background-position: 50% 90%;
   display: flex;
@@ -217,4 +217,3 @@ footer li a {
 .logo p {
   margin: 10px;
 }
-

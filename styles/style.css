@@ -1,7 +1,8 @@
 body {
   padding: 0px;
   margin: 0px;
-  font-size: 14px;
+  font-size: 16px;
+  color: #303846;
 }
 
 header {
@@ -38,7 +39,7 @@ li a:hover {
    }
 
 main .banner {
-  height: 40vmax;
+  height: 25vmax;
   background-image: url("../images/banner.png");
   background-size: 100%;
   background-position: 50% 90%;
@@ -64,65 +65,51 @@ main .banner {
 }
 
 .advantages {
+  padding: 3%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-section {
-  display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
 article {
-  display: inline-block;
-  width: 333px;
-  height: auto;
+  display: block;
+  box-sizing: border-box;
+  padding: 45px;
+  width: 433px;
 }
 
 article h2 {
   padding: 0px;
+  margin-top: 0px;
 }
 
 .first-about {
   background-color:#f7f7f7;
-  padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .first-about img {
   padding: 45px;
-  width: 27%;
-  height: auto;
-}
-
-.first-about article {
-  margin: 25px;
+  width: 30%;
+  height: 30%;
+  
 }
 
 .places-to-rest {
-  padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .places-to-rest img {
   padding: 45px;
-  width: 27%;
-  height: auto;
-}
-
-.places-to-rest article {
-  margin: 25px;
+  width: 30%;
+  height: 30%;
 }
 
  #wraper {
-  padding: 20px;
   width: 100%;
   background-color:#f7f7f7;
   display: flex;
@@ -138,8 +125,8 @@ main ul {
   padding-inline-start: 0px;
 }
 
-.first-label {
-  margin-right: 35px;
+label {
+  width: 155px;
 }
 
 main li {
@@ -177,6 +164,7 @@ input {
 }
 
 .forms button {
+  margin-bottom: 10px;
   margin-left: 10px;
   padding: 5px 15px;
   background-color: transparent;

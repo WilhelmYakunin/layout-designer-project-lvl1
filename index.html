@@ -8,7 +8,7 @@
     <meta name="og:title" content="Лунное море">
     <meta name="og:description" content="Жилой комлпекс Лунное озеро: квартиры с видом на планету Земля">
     <meta name="og:image" content="images/logo.svg">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЖК "Лунное море" Wilhelm</title>
 </head>
 <body>
@@ -17,10 +17,10 @@
         <p>Лунное море</p>
         
         <nav id="menu"> <!-- Меню -->
-            <ul>
-                <li><a href="#mainContent">Преимущества</a></li>
-                <li><a href="#about-JK">О ЖК</a></li>
-                <li><a href="#placesToRest">Места для отдыха</a></li>
+            <ul class="list-style-type-none">
+                <li><a class="text-decoration-none dark-grey" href="#mainContent">Преимущества</a></li>
+                <li><a class="text-decoration-none dark-grey" href="#about-JK">О ЖК</a></li>
+                <li><a class="text-decoration-none dark-grey" href="#placesToRest">Места для отдыха</a></li>
             </ul>
         </nav>
     </header>
@@ -30,61 +30,68 @@
             <img src="images/logo.svg" alt="логотип сайта" height="100" width="100">
             <div class="bannertext">
                 <h1>ЖК «Лунное море»</h1>
-                <h4>Место, откуда не хочется улетать</h4>
+                <p>Место, откуда не хочется улетать</p>
             </div>
             <button onclick="location.href=&#39;#feedback&#39;" type="button">Забронировать</button>
         </div>
 
-        <div class="main-content" id="mainContent">
-            <div class="advantages">
-                    <article>
+            <div class="main-content">
+                <div class="wraper marging-left-rigth-5procents" id="mainContent"> 
+                    <div class="column-3">
+
                         <h2>Уникальный вид</h2>
-                        <p>Вид на космос из вашего окна. 
-                            Мы построили дома с большими окнами, 
-                            чтобы вы могли наслаждаться метеоритными потоками.</p>
-                    </article>
-                    <article>
+                        <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, 
+                        чтобы вы могли наслаждаться метеоритными потоками.
+                        </p>
+
+                    </div>
+                    <div class="column-3">
                         <h2>Инфраструктура</h2>
-                        <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. 
-                            от посёлка находится кольцо гор Кордильеры, 
-                            на которых вы сможете провести незабываемые выходные.</p>
-                    </article>
-                    <article>
+                        <p>Прекрасные дороги рядом с домом. Много мест для прогулки. 
+                        Всего в 200 км. от посёлка находится кольцо гор Кордильеры, 
+                        на которых вы сможете провести незабываемые выходные.
+                        </p>
+                    </div>
+
+                    <div class="column-3">
                         <h2>Близость к Москве</h2>
                         <p>При небольшой цене мы располагаемся близко к МКАД. 
-                            Всего 384 000 километров и вы в самом сердце России.</p>
-                    </article>
+                        Всего 384 000 километров и вы в самом сердце России.
+                        </p>
+                    </div>
             </div>
-        </div>
 
-        <div class="about-JK" id="about-JK">
-            <div class="first-about">
-                <article>
-                    <h2>О ЖК «Лунное море»</h2>
-                    <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
+            <div class="background-grey" id="about-JK">
+                <div class="wraper marging-left-rigth-10procents">
+                    <section class="column-2">
+                        <h2>О ЖК «Лунное море»</h2>
+                        <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                         к тому же связь с мегаполисом не теряется – современные скоростные 
                         трассы позволяют без труда добираться до столицы и обратно.</p>
-                    <p>Мы построили наши дома на самом близком к Солнцу спутнике, 
+                        <p>Мы построили наши дома на самом близком к Солнцу спутнике, 
                         всего в 380 тысяч километров от Земли.</p>
-                </article>
-                <img src="images/moon-1.jpg" alt="вид на Луну">
+                    </section>
+                    <img class="column-2 width-height-25x35" src="images/moon-1.jpg" alt="вид на Луну">
+                </div>
             </div>
-            <div class="places-to-rest" id="placesToRest">
-                <img src="images/moon-2.jpg" alt="вид на плету Земля с Луны">
-                <article>
+
+            <div class="wraper marging-left-rigth-5procents" id="placesToRest">
+                <img class="column-2 width-height-25x35" src="images/moon-2.jpg" alt="вид на плету Земля с Луны">
+                <div class="column-2">
                     <h2>Места для отдыха</h2>
                     <p>Луна обладает всеми условиями для комфортного отдыха от большого города. 
                         В вашем распоряжении 22 моря и 18 гор. 
                         Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
                         <p>Дома располагаются в новом районе «Лунные моря». 
                             При необходимости есть автобусы до района «Лунный материк».</p>
-                </article>
+                </div>
             </div>
         </div>
+        
         <div id="wraper">
             <div class="forms" id="feedback">
-                <p><b>Оставьте заявку сегодня!</b></p>
-                <form autocomplete="on" method="POST" name="feedback">
+                <p>Оставьте заявку сегодня!</p>
+                <form autocomplete="on">
                     <fieldset>
                         <legend>Параметры квартиры</legend>
                         <ul>
@@ -131,19 +138,22 @@
         <div class="project-documentation">
             <lh>Проектная документация</lh>
             <ul>
-                <li><a href="#">Скачать</a></li>
-                <li><a href="#">Посмотреть на сайте</a></li>
+                <li class="list-style-type-none "><a class="text-decoration-none" href="#">Скачать</a></li>
+                <li class="list-style-type-none"><a class="text-decoration-none" href="#">Посмотреть на сайте</a></li>
             </ul>
         </div>
 
         <div class="about-company">
             <lh>О застройщике</lh>
             <ul>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Сайт компании</a></li>
+                <li class="list-style-type-none text-decoration-none">
+                    <a class="text-decoration-none" href="#">Отзывы</a>
+                </li>
+                <li class="list-style-type-none text-decoration-none">
+                    <a class="text-decoration-none" href="#">Сайт компании</a>
+                </li>
             </ul>
         </div>
     </footer>
-
-
-</body></html>
+</body>
+</html>

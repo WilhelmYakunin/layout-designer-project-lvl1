@@ -1,18 +1,29 @@
 body {
+  width: 100%;
   padding: 0px;
   margin: 0px;
   font-size: 16px;
   color: #303846;
+  font-family: "Arial", sans-serif;
+}
+
+.dark-grey {
+  color: #303846;
 }
 
 header {
-  margin-top: 0px;
-  background-color: white;
+  position: fixed;
+  top: 0px;
   width: 100%;
+  background-color: white;
   padding: 5px;
   height: 50px;
   display: flex;
   align-items: center;
+}
+
+.list-style-type-none {
+  list-style-type: none;
 }
 
 header p {
@@ -28,8 +39,7 @@ nav li {
   margin: 10px;
 }
 
-li a {
-  color: black;    
+.text-decoration-none {
   text-decoration: none; /* Убирает подчеркивание для ссылок */
 }
 
@@ -39,7 +49,7 @@ li a:hover {
    }
 
 main .banner {
-  height: 25vmax;
+  height: 35vmax;
   background-image: url("../images/banner.png");
   background-size: 100%;
   background-position: 50% 90%;
@@ -64,56 +74,52 @@ main .banner {
   color: white;
 }
 
-.advantages {
-  padding: 3%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-article {
+.main-content {
   display: block;
-  box-sizing: border-box;
-  padding: 45px;
-  width: 433px;
 }
 
-article h2 {
-  padding: 0px;
-  margin-top: 0px;
+.wraper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.first-about {
+.column-3 {
+  width: 333px;
+  padding: 5%;
+}
+
+.marging-left-rigth-5procents {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.column-2 {
+  width: 500px;
+  padding: 5%;
+}
+
+.marging-left-rigth-10procents {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.width-height-25x35 {
+  margin-block-start: 1.66em;
+  width: 35%; 
+  height: 45%;
+}
+
+.background-grey {
   background-color:#f7f7f7;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 
-.first-about img {
-  padding: 45px;
-  width: 30%;
-  height: 30%;
-  
-}
-
-.places-to-rest {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.places-to-rest img {
-  padding: 45px;
-  width: 30%;
-  height: 30%;
-}
-
- #wraper {
-  width: 100%;
+#wraper {
   background-color:#f7f7f7;
   display: flex;
   justify-content: center;
+  
 }
 
 .forms {

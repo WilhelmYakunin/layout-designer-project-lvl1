@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <meta name="description" content="Жилой комплекс Лунное озеро: квартиры с видом на планету Земля">
     <meta name="og:title" content="Лунное море">
@@ -10,150 +8,179 @@
     <meta name="og:image" content="images/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЖК "Лунное море" Wilhelm</title>
+
 </head>
+
 <body>
-    <header>
-        <img src="images/logo.svg" alt="логотип сайта" height="32" width="32"> <!-- Логтотип сайта -->
-        <p>Лунное море</p>
+    <header class="header flex f-space-between"> <!-- Хэдер -->
+        <div class="header-logo"> <!-- Лого -->
+            <img class="display-inline align-middle" src="images/logo.svg" 
+            alt="логотип сайта" height="32" width="32"> 
+            <p class="display-inline ml-5px">Лунное&nbsp;море</p>
+        </div> <!-- Лого -->
         
-        <nav id="menu"> <!-- Меню -->
-            <ul class="list-style-type-none">
-                <li><a class="text-decoration-none dark-grey" href="#mainContent">Преимущества</a></li>
-                <li><a class="text-decoration-none dark-grey" href="#about-JK">О ЖК</a></li>
-                <li><a class="text-decoration-none dark-grey" href="#placesToRest">Места для отдыха</a></li>
+        <nav class="navigation"> <!-- Меню навигации -->
+            <ul class="ls-none">
+                <li class="display-inline"><a class="text-decoration-none dark-grey" href="#mainContent">Преимущества</a></li>
+                <li class="display-inline"><a class="text-decoration-none dark-grey" href="#about-JK">О ЖК</a></li>
+                <li class="display-inline"><a class="text-decoration-none dark-grey" href="#placesToRest">Места для отдыха</a></li>
             </ul>
-        </nav>
-    </header>
+        </nav> <!-- Меню навигации-->
+    </header> <!-- Хэдер -->
     
-    <main>
-        <div class="banner">
-            <img src="images/logo.svg" alt="логотип сайта" height="100" width="100">
-            <div class="bannertext">
+    <main> <!-- Основаня часть страницы -->
+        <div class="main-background"> <!-- Баннер с кнопкой -->
+            <img class="mt-5" src="images/logo.svg" alt="логотип сайта" height="120" width="120">
+            <div class="main-background-text align-center c-white">
                 <h1>ЖК «Лунное море»</h1>
                 <p>Место, откуда не хочется улетать</p>
             </div>
-            <button onclick="location.href=&#39;#feedback&#39;" type="button">Забронировать</button>
-        </div>
+            <button class="c-white button" onclick="location.href=&#39;#booking-form&#39;" type="button">Забронировать</button>
+        </div> <!-- Баннер с кнопкой -->
 
-            <div class="main-content">
-                <div class="wraper marging-left-rigth-5procents" id="mainContent"> 
-                    <div class="column-3">
+            
+        <div id="mainContent" class="p-30px flex f-center"> <!-- Секцкия с преимуществами -->
+            <div class="p-30px container flex f-space-around">
+                <div class="w-33 p-1">
 
-                        <h2>Уникальный вид</h2>
-                        <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, 
+                    <h2>Уникальный вид</h2>
+                    <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, 
                         чтобы вы могли наслаждаться метеоритными потоками.
-                        </p>
+                    </p>
 
-                    </div>
-                    <div class="column-3">
-                        <h2>Инфраструктура</h2>
-                        <p>Прекрасные дороги рядом с домом. Много мест для прогулки. 
+                </div>
+
+                <div class="w-33 p-1">
+
+                    <h2>Инфраструктура</h2>
+                    <p>Прекрасные дороги рядом с домом. Много мест для прогулки. 
                         Всего в 200 км. от посёлка находится кольцо гор Кордильеры, 
                         на которых вы сможете провести незабываемые выходные.
-                        </p>
-                    </div>
+                    </p>
+                </div>
 
-                    <div class="column-3">
-                        <h2>Близость к Москве</h2>
-                        <p>При небольшой цене мы располагаемся близко к МКАД. 
+                <div class="w-33 p-1">
+
+                    <h2>Близость к Москве</h2>
+                    <p>При небольшой цене мы располагаемся близко к МКАД. 
                         Всего 384 000 километров и вы в самом сердце России.
-                        </p>
-                    </div>
+                    </p>
+                </div>
+
             </div>
 
-            <div class="background-grey" id="about-JK">
-                <div class="wraper marging-left-rigth-10procents">
-                    <section class="column-2">
-                        <h2>О ЖК «Лунное море»</h2>
+        </div> <!-- Секцкия с преимуществами -->
+
+        <div id="about-JK" class="background-grey p-30px flex f-center"> <!-- Секцкия про ЖК -->
+
+            <div class="p-30px container flex f-space-evenly">
+                    
+                    <section class="w-33 p-1">
+                        <h2 class="m-0">О ЖК «Лунное море»</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                         к тому же связь с мегаполисом не теряется – современные скоростные 
                         трассы позволяют без труда добираться до столицы и обратно.</p>
                         <p>Мы построили наши дома на самом близком к Солнцу спутнике, 
                         всего в 380 тысяч километров от Земли.</p>
                     </section>
-                    <img class="column-2 width-height-25x35" src="images/moon-1.jpg" alt="вид на Луну">
-                </div>
+                    <img class="w-40 p-1" src="images/moon-1.jpg" 
+                    alt="вид на Луну">
+
             </div>
 
-            <div class="wraper marging-left-rigth-5procents" id="placesToRest">
-                <img class="column-2 width-height-25x35" src="images/moon-2.jpg" alt="вид на плету Земля с Луны">
-                <div class="column-2">
-                    <h2>Места для отдыха</h2>
+        </div> <!-- Секцкия про ЖК -->
+
+        <div id="placesToRest" class="p-30px flex f-center"> <!-- Секцкия про отдых -->
+
+            <div class="p-30px container flex f-space-evenly">
+
+                <img class="w-40 p-5" src="images/moon-2.jpg" alt="вид на плету Земля с Луны">
+                <section class="w-33 p-5">
+
+                    <h2 class="m-0">Места для отдыха</h2>
                     <p>Луна обладает всеми условиями для комфортного отдыха от большого города. 
                         В вашем распоряжении 22 моря и 18 гор. 
                         Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
                         <p>Дома располагаются в новом районе «Лунные моря». 
                             При необходимости есть автобусы до района «Лунный материк».</p>
-                </div>
+                </section>
+
             </div>
-        </div>
+
+        </div> <!-- Секцкия про отдых -->
         
-        <div id="wraper">
-            <div class="forms" id="feedback">
-                <p>Оставьте заявку сегодня!</p>
-                <form autocomplete="on">
-                    <fieldset>
-                        <legend>Параметры квартиры</legend>
-                        <ul>
-                            <li><label>Количество комнат:</label>
-                                <select size="1">
+        <div id="booking-form" class="p-30px background-grey"> <!-- Форма бронирования -->
+            <p class="fs-24px fw-900 align-center">Оставьте заявку сегодня!</p>
+            <form class="m-auto w-33" autocomplete="on" action="#" method="GET">
+
+                    <fieldset class="m-15px flex flex-column border-green">
+                        <legend class="fs-20px fw-bold color-green">Параметры квартиры</legend>
+                            <div class="m-15px">
+                                <label class="w-50 fw-bold">Количество комнат:</label>
+                                <select class="w-40 form-sphere" size="1">
                                 <option selected="" value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 </select>
-                            </li>
-                            <li><label>Отделка:</label>
-                                <select size="1">
+                            </div>
+                            
+                            <div class="m-15px flex">
+                                <label class="w-50 fw-bold">Отделка:</label>
+                                <select class="w-40 form-sphere" size="1">
                                     <option selected="" value="Without">Без отделки</option>
                                     <option value="King">По-царски</option>
                                     <option value="Quin">По-королевски</option>
-                                    </select>
-                            </li>
-                        </ul>
+                                </select>
+                            </div>
                     </fieldset>
-                    <fieldset>
-                        <legend>Контактная информация</legend>
-                        <ul>
-                            <li><label>Имя:</label> <input type="text" name="firstname"></li>
-                            <li><label>Телефон:</label> <input type="text" name="phone"></li>
-                            <li><label>E-mail:</label> <input type="email" name="email"></li>
-                        </ul>                   
+
+                    <fieldset class="m-15px flex flex-column border-green">
+                        <legend class="fs-20px fw-bold color-green">Контактная информация</legend>
+                        <div class="m-15px flex">
+                            <label class="w-50 fw-bold">Имя:</label> 
+                            <input class="w-50 form-sphere" type="text" name="firstname">
+                        </div>
+
+                        <div class="m-15px flex">
+                            <label class="w-50 fw-bold">Телефон:</label> 
+                            <input class="w-50 form-sphere" type="text" name="phone">
+                        </div>
+                        
+                        <div class="m-15px flex">
+                            <label class="w-50 fw-bold">E-mail:</label> 
+                            <input class="w-50 form-sphere" type="email" name="email">
+                        </div>
                     </fieldset>
-                <button>Отправить</button>
+                    <button class="m-15px fw-bold color-green border-green button">Отправить</button>
             </form>
-            </div>
-        </div>
-        
-    </main>
+        </div> <!-- Форма бронирования -->
 
-    <footer>
-        <div class="logo">
-            <div class="sign">
-                <img src="images/logo.svg" alt="логотип сайта" height="32" width="32"> <!-- Логтотип сайта -->
-            <p>Лунное море</p>
+    </main> <!-- Основаня часть страницы -->
+
+    <footer class="footer c-white"> <!-- Футер -->
+        <div class="footer-logo">
+            <div class="flex f-align-center">
+                <img class="display-inline align-middle" src="images/logo.svg" alt="логотип сайта" height="32" width="32"> <!-- Логтотип сайта -->
+                <p class="ml-5px">Лунное&nbsp;море</p>
             </div>
-            <p>© 2032</p>
+            <p class="m-0">© 2032</p>
         </div>
         
-        <div class="project-documentation">
+        <div>
             <lh>Проектная документация</lh>
-            <ul>
-                <li class="list-style-type-none "><a class="text-decoration-none" href="#">Скачать</a></li>
-                <li class="list-style-type-none"><a class="text-decoration-none" href="#">Посмотреть на сайте</a></li>
+            <ul class="margin-block-start">
+                <li><a class="c-white text-decoration-none" href="#">Скачать</a></li>
+                <li><a class="c-white text-decoration-none" href="#">Посмотреть на сайте</a></li>
             </ul>
         </div>
 
-        <div class="about-company">
+        <div>
             <lh>О застройщике</lh>
-            <ul>
-                <li class="list-style-type-none text-decoration-none">
-                    <a class="text-decoration-none" href="#">Отзывы</a>
-                </li>
-                <li class="list-style-type-none text-decoration-none">
-                    <a class="text-decoration-none" href="#">Сайт компании</a>
-                </li>
+            <ul class="margin-block-start">
+                <li><a class="c-white text-decoration-none" href="#">Отзывы</a></li>
+                <li><a class="c-white text-decoration-none" href="#">Сайт компании</a></li>
             </ul>
         </div>
-    </footer>
+    </footer> <!-- Футер -->
 </body>
 </html>

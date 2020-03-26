@@ -6,7 +6,7 @@ color: #303846;
 font-family: "Arial", sans-serif;
 }
 
-li a:hover {
+a:hover {
   text-decoration: underline;
   color: blueviolet;
 }
@@ -127,8 +127,8 @@ padding: 30px 0px;
 margin: 15px;
 }
 
-.fs-24px {
-font-size: 24px;
+.fs-22px {
+font-size: 22px;
 }
 
 .fs-20px {

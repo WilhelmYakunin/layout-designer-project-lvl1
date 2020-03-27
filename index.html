@@ -18,14 +18,14 @@
             <div class="header-logo ml-15px"> <!-- Лого -->
                 <img class="display-inline align-middle" src="images/logo.svg" 
                 alt="логотип сайта" height="32" width="32"> 
-             <p class="display-inline">Лунное&nbsp;море</p>
+             <p class="display-inline ml-15px fw-bold">Лунное&nbsp;море</p>
             </div> <!-- Лого -->
         
             <nav class="mr-15px"> <!-- Меню навигации -->
                 <ul class="ls-none">
-                    <li class="display-inline"><a class="text-decoration-none dark-grey" 
+                    <li class="mr-15px display-inline"><a class="text-decoration-none dark-grey" 
                         href="#mainContent">Преимущества</a></li>
-                    <li class="display-inline"><a class="text-decoration-none dark-grey" 
+                    <li class="display-inline"><a class="mr-15px text-decoration-none dark-grey" 
                         href="#about-JK">О ЖК</a></li>
                     <li class="display-inline"><a class="text-decoration-none dark-grey" 
                         href="#placesToRest">Места для отдыха</a></li>
@@ -34,22 +34,22 @@
         </header> <!-- Хэдер -->
     
         <main> <!-- Основаня часть страницы -->
-            <div class="banner d-flex"> <!-- Баннер с кнопкой -->
-                <div class="container align-center">
-                    <img class="mt-7" src="images/logo.svg" alt="логотип сайта" height="120" width="120">
-                    <div class="main-background-text align-center c-white">
+            <div class="banner d-flex mt-50px"> <!-- Баннер с кнопкой -->
+                <div class="container text-center mt-7 mb-5">
+                    <img src="images/logo.svg" alt="логотип сайта" height="120" width="120">
+                    <div class="banner-text text-center c-white">
                     <h1>ЖК «Лунное море»</h1>
                     <p>Место, откуда не хочется улетать</p>
                     </div>
-                    <button class="mb-5 c-white button" 
+                    <button class="button btn-white" 
                     onclick="location.href=&#39;#booking-form&#39;" 
                     type="button">Забронировать</button>
                 </div>
             </div> <!-- Баннер с кнопкой -->
 
             
-            <div id="mainContent" class="p-30px d-flex f-center"> <!-- Секцкия с преимуществами -->
-                <div class="p-30px container d-flex f-space-around">
+            <div id="mainContent" class="d-flex f-center"> <!-- Секцкия с преимуществами -->
+                <div class="container d-flex f-space-around">
                     <div class="w-33 p-1">
 
                         <h2>Уникальный вид</h2>
@@ -80,9 +80,9 @@
 
             </div> <!-- Секцкия с преимуществами -->
 
-            <div id="about-JK" class="background-grey p-30px d-flex f-center"> <!-- Секцкия про ЖК -->
+            <div id="about-JK" class="background-grey d-flex f-center"> <!-- Секцкия про ЖК -->
 
-                <div class="p-30px container d-flex f-space-evenly">
+                <div class="container d-flex f-space-evenly mt-10 mb-10 p-2">
                     
                     <section class="w-33 p-1">
                         <h2 class="m-0">О ЖК «Лунное море»</h2>
@@ -99,9 +99,9 @@
 
             </div> <!-- Секцкия про ЖК -->
 
-            <div id="placesToRest" class="p-30px d-flex f-center"> <!-- Секцкия про отдых -->
+            <div id="placesToRest" class="d-flex f-center"> <!-- Секцкия про отдых -->
 
-                <div class="p-30px container d-flex f-space-evenly">
+                <div class="container d-flex f-space-evenly mt-10 mb-10 p-2">
 
                     <img class="w-40 p-1" src="images/moon-2.jpg" alt="вид на плету Земля с Луны">
                     <section class="w-33 p-1">
@@ -118,11 +118,11 @@
 
             </div> <!-- Секцкия про отдых -->
         
-            <div id="booking-form" class="p-30px background-grey"> <!-- Форма бронирования -->
-                <div class="container d-flex m-auto">
+            <div id="booking-form" class="background-grey"> <!-- Форма бронирования -->
+                <div class="container d-flex m-auto p-2">
                     
                     <form class="w-40 m-auto" autocomplete="on" action="#" method="POST">
-                        <p class="fs-22px fw-900 align-center">Оставьте заявку сегодня!</p>
+                        <p class="fs-22px fw-900 text-center">Оставьте заявку сегодня!</p>
                     <fieldset class="m-10px d-flex flex-column border-green">
                         <legend class="fs-20px fw-bold color-green">Параметры квартиры</legend>
                             <div class="m-10px d-flex">
@@ -149,7 +149,7 @@
                         <div class="m-10px d-flex">
                             <label class="w-50 fw-bold">Имя:</label> 
                             <input required class="w-50 form-sphere" type="text" 
-                            name="firstname" autofocus="on">
+                            name="firstname">
                         </div>
 
                         <div class="m-10px d-flex">
@@ -162,7 +162,7 @@
                             <input required class="w-50 form-sphere" type="email" name="email">
                         </div>
                     </fieldset>
-                    <button class="m-10px fw-bold color-green border-green button">Отправить</button>
+                    <button class="m-10px button btn-green">Отправить</button>
                     </form>
                 </div>
             </div> <!-- Форма бронирования -->

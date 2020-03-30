@@ -1,197 +1,199 @@
-body {
-padding: 0px;
-margin: 0px;
-font-size: 16px;
-color: #303846;
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+body
+{
+	color: #303846;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 "Helvetica Neue", Arial, "Noto Sans", sans-serif, 
 "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-line-height: 1.5;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0px;
+	padding: 0px;
 }
-
-h1,h2 {
-  line-height: 1.2;
+h1,h2
+{
+	line-height: 1.2;
 }
-
-a:hover {
-  text-decoration: underline;
-  color: blueviolet;
+a:hover
+{
+	color: #61cbb7;
+	text-decoration: underline;
 }
-
-.text-center {
-text-align: center;
+.text-center
+{
+	text-align: center;
 }
-
-.f-align-center {
-  align-items: center;
+.f-align-center
+{
+	align-items: center;
 }
-
-.btn-green {
-border: 2px solid #61cbb7;
-color: #61cbb7; 
+.btn-green
+{
+	border: 2px solid #61cbb7;
+	color: #61cbb7;
 }
-
-.header {
-position: fixed;
-top: 0;
-width: 100%;
-background-color: white;
-font-size: 14px;
-box-sizing: border-box;
-padding: 0px 20px;
+.header
+{
+	background-color: white;
+	box-sizing: border-box;
+	font-size: 14px;
+	padding: 0px 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
-
-.f-space-between {
-justify-content: space-between;
+.f-space-between
+{
+	justify-content: space-between;
 }
-
-.dark-grey {
-color: #303846;
+.dark-grey
+{
+	color: #303846;
 }
-
-.ls-none {
-list-style-type: none;
+.ls-none
+{
+	list-style-type: none;
 }
-
-.text-decoration-none {
-text-decoration: none;
+.text-decoration-none
+{
+	text-decoration: none;
 }
-
-.c-white {
-color: white;
+.c-white
+{
+	color: white;
 }
-
-.banner {
-background-image: url("../images/banner.png");
-background-size: 130%;
-background-position: 10% 70%;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-width: fill-available;
+.banner
+{
+	align-items: center;
+	background-image: url("../images/banner.png");
+	background-position: 5% 70%;
+	background-size: 125%;
+	flex-direction: column;
+	font-weight: bold;
+	justify-content: center;
+	width: fill-available;
 }
-
-.mt-4 {
-margin-top: 4%;
+.mt-5
+{
+	margin-top: 5%;
 }
-
-.fs-18px {
-font-size: 18px;
+.fs-18px
+{
+	font-size: 18px;
 }
-
-.btn-white {
-border-color: white;
-color: white;
+.btn-white
+{
+	border-color: white;
+	color: white;
 }
-
-.container {
-margin: 0 auto;
-padding: 3%;
-width: 1000px;
+.container
+{
+	margin: 0 auto;
+	padding: 3%;
+	width: 1000px;
 }
-
-.f-space-around {
-justify-content: space-around;
+.f-space-around
+{
+	justify-content: space-around;
 }
-
-.f-space-evenly {
-justify-content: space-evenly;
+.f-space-evenly
+{
+	justify-content: space-evenly;
 }
-
-.p-1 {
-padding: 1%;
+.p-1
+{
+	padding: 1%;
 }
-
-.p-2 {
-  padding: 2%;
+.p-2
+{
+	padding: 2%;
 }
-
-.border-green {
-  border: 2px solid #61cbb7;
+.border-green
+{
+	border: 2px solid #61cbb7;
 }
-
-.background-grey {
-background-color:#f7f7f7;
+.background-grey
+{
+	background-color: #f7f7f7;
 }
-
-.m-10px {
-margin: 10px;
+.m-10px
+{
+	margin: 10px;
 }
-
-.fw-900 {
-font-weight: 900;
+.fw-900
+{
+	font-weight: 900;
 }
-
-.fw-bold {
-font-weight: bold;
+.fw-bold
+{
+	font-weight: bold;
 }
-
-.w-33 {
-width: 33%;
+.w-33
+{
+	width: 33%;
 }
-
-.fs-26px {
-  font-size: 26px;
+.fs-26px
+{
+	font-size: 26px;
 }
-
-.fs-20 {
-  font-size: 20px;
+.fs-20
+{
+	font-size: 20px;
 }
-
-.m-auto {
-margin: auto;
+.m-auto
+{
+	margin: auto;
 }
-
-.d-flex {
-display: flex;
+.d-flex
+{
+	display: flex;
 }
-
-.flex-column {
-flex-direction: column;
+.flex-column
+{
+	flex-direction: column;
 }
-
-.w-50 {
-width: 50%;
+.w-50
+{
+	width: 50%;
 }
-
-.w-40 {
-width: 40%;
+.w-40
+{
+	width: 40%;
 }
-
-.form-sphere {
-border: 1px solid #AAA;
-border-radius: 7px;
-padding: 1%;
+.form-sphere
+{
+	border: 1px solid #AAA;
+	border-radius: 7px;
+	padding: 1%;
 }
-
-.color-green {
-color: #61cbb7;
+.color-green
+{
+	color: #61cbb7;
 }
-
-.button {
-padding: 10px 20px;
-background-color: transparent;
-border-radius: 8px;
-border-width: 1px;
-border-style: solid;
-font-weight: bold;
+.button
+{
+	background-color: transparent;
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 10px 20px;
 }
-
-.footer {
-font-size: 14px;
-background-color: #303846;
+.footer
+{
+	background-color: #303846;
+	font-size: 14px;
 }
-
-.margin-block-start {
-margin-block-start: 0.5em;
+.margin-block-start
+{
+	margin-block-start: 0.5em;
 }
-
-.footer-logo {
-display: flex;
-flex-direction: column;
+.footer-logo
+{
+	display: flex;
+	flex-direction: column;
 }
-
-.m-0 {
-margin: 0px;
+.m-0
+{
+	margin: 0px;
 }

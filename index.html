@@ -15,41 +15,47 @@
 
     <body>
         <header class="header d-flex f-space-between"> <!-- Хэдер -->
-            <div class="header-logo ml-15px"> <!-- Лого -->
-                <img class="display-inline align-middle" src="images/logo.svg" 
+            <div class="d-flex f-align-center"> <!-- Лого -->
+                <img class="p-2" src="images/logo.svg" 
                 alt="логотип сайта" height="32" width="32"> 
-             <p class="display-inline ml-15px fw-bold">Лунное&nbsp;море</p>
+             <p class="fw-bold p-2">Лунное&nbsp;море</p>
             </div> <!-- Лого -->
         
-            <nav class="mr-15px"> <!-- Меню навигации -->
-                <ul class="ls-none">
-                    <li class="mr-15px display-inline"><a class="text-decoration-none dark-grey" 
-                        href="#mainContent">Преимущества</a></li>
-                    <li class="display-inline"><a class="mr-15px text-decoration-none dark-grey" 
-                        href="#about-JK">О ЖК</a></li>
-                    <li class="display-inline"><a class="text-decoration-none dark-grey" 
-                        href="#placesToRest">Места для отдыха</a></li>
-                </ul>
+            <nav> <!-- Меню навигации -->
+                <ul class="d-flex">
+                    <li class="ls-none m-10px"><a class="text-decoration-none dark-grey" 
+                        href="#mainContent">Преимущества</a>
+                    </li>
+
+                    <li class="ls-none m-10px"><a class=" text-decoration-none dark-grey" 
+                        href="#about-JK">О ЖК</a>
+                    </li>
+
+                    <li class="ls-none m-10px"><a class="text-decoration-none dark-grey" 
+                        href="#placesToRest">Места для отдыха</a>
+                    </li>
+            </ul>
+                              
             </nav> <!-- Меню навигации-->
         </header> <!-- Хэдер -->
     
-        <main> <!-- Основаня часть страницы -->
-            <div class="banner d-flex mt-50px"> <!-- Баннер с кнопкой -->
-                <div class="container text-center mt-7 mb-5">
+        <main class="mt-4"> <!-- Основаня часть страницы -->
+            <div class="banner d-flex mb-5"> <!-- Баннер с кнопкой -->
+                <div class="container text-center">
                     <img src="images/logo.svg" alt="логотип сайта" height="120" width="120">
-                    <div class="banner-text text-center c-white">
-                    <h1>ЖК «Лунное море»</h1>
-                    <p>Место, откуда не хочется улетать</p>
+                    <div class="fs-18px text-center c-white p-2">
+                    <h1 class="m-0">ЖК «Лунное море»</h1>
+                    <p class="m-0">Место, откуда не хочется улетать</p>
                     </div>
-                    <button class="button btn-white" 
+                    <a class="button btn-white" 
                     onclick="location.href=&#39;#booking-form&#39;" 
-                    type="button">Забронировать</button>
+                    type="button">Забронировать</a>
                 </div>
             </div> <!-- Баннер с кнопкой -->
 
             
-            <div id="mainContent" class="d-flex f-center"> <!-- Секцкия с преимуществами -->
-                <div class="container d-flex f-space-around">
+            <div id="mainContent" class=""> <!-- Секцкия с преимуществами -->
+                <div class="m-auto container d-flex f-space-around">
                     <div class="w-33 p-1">
 
                         <h2>Уникальный вид</h2>
@@ -80,11 +86,11 @@
 
             </div> <!-- Секцкия с преимуществами -->
 
-            <div id="about-JK" class="background-grey d-flex f-center"> <!-- Секцкия про ЖК -->
+            <div id="about-JK" class="background-grey"> <!-- Секцкия про ЖК -->
 
-                <div class="container d-flex f-space-evenly mt-10 mb-10 p-2">
+                <div class="m-auto container d-flex f-space-evenly">
                     
-                    <section class="w-33 p-1">
+                    <section class="w-33 p-1 m-0">
                         <h2 class="m-0">О ЖК «Лунное море»</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                         к тому же связь с мегаполисом не теряется – современные скоростные 
@@ -92,19 +98,19 @@
                         <p>Мы построили наши дома на самом близком к Солнцу спутнике, 
                         всего в 380 тысяч километров от Земли.</p>
                     </section>
-                    <img class="w-40 p-1" src="images/moon-1.jpg" 
+                    <img class="w-40 p-2" src="images/moon-1.jpg" 
                     alt="вид на Луну">
 
                 </div>
 
             </div> <!-- Секцкия про ЖК -->
 
-            <div id="placesToRest" class="d-flex f-center"> <!-- Секцкия про отдых -->
+            <div id="placesToRest" class="d-flex"> <!-- Секцкия про отдых -->
 
-                <div class="container d-flex f-space-evenly mt-10 mb-10 p-2">
+                <div class="m-auto container d-flex f-space-evenly">
 
-                    <img class="w-40 p-1" src="images/moon-2.jpg" alt="вид на плету Земля с Луны">
-                    <section class="w-33 p-1">
+                    <img class="w-40 p-2" src="images/moon-2.jpg" alt="вид на плету Земля с Луны">
+                    <section class="w-33 p-2 m-0">
 
                         <h2 class="m-0">Места для отдыха</h2>
                         <p>Луна обладает всеми условиями для комфортного отдыха от большого города. 
@@ -119,15 +125,15 @@
             </div> <!-- Секцкия про отдых -->
         
             <div id="booking-form" class="background-grey"> <!-- Форма бронирования -->
-                <div class="container d-flex m-auto p-2">
+                <div class="container d-flex">
                     
-                    <form class="w-40 m-auto" autocomplete="on" action="#" method="POST">
-                        <p class="fs-22px fw-900 text-center">Оставьте заявку сегодня!</p>
+                    <form class="user rooms w-40 m-auto" autocomplete="on" action="#" method="POST">
+                        <p class="fs-26px fw-bold text-center">Оставьте заявку сегодня!</p>
                     <fieldset class="m-10px d-flex flex-column border-green">
                         <legend class="fs-20px fw-bold color-green">Параметры квартиры</legend>
                             <div class="m-10px d-flex">
-                                <label class="w-50 fw-bold">Количество комнат:</label>
-                                <select class="w-40 form-sphere" size="1">
+                                <label for="rooms-number" class="w-50 fw-bold">Количество комнат:</label>
+                                <select id="rooms-number" class="w-40 form-sphere" size="1">
                                 <option selected value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -135,8 +141,8 @@
                             </div>
                             
                             <div class="m-10px d-flex">
-                                <label class="w-50 fw-bold">Отделка:</label>
-                                <select class="w-40 form-sphere" size="1">
+                                <label for="rooms-decoration" class="w-50 fw-bold">Отделка:</label>
+                                <select id="rooms-decoration" class="w-40 form-sphere" size="1">
                                     <option selected="" value="Without">Без отделки</option>
                                     <option value="King">По-царски</option>
                                     <option value="Quin">По-королевски</option>
@@ -147,19 +153,19 @@
                     <fieldset class="m-10px d-flex flex-column border-green">
                         <legend class="fs-20px fw-bold color-green">Контактная информация</legend>
                         <div class="m-10px d-flex">
-                            <label class="w-50 fw-bold">Имя:</label> 
-                            <input required class="w-50 form-sphere" type="text" 
+                            <label for="user-name" class="w-50 fw-bold">Имя:</label> 
+                            <input id="user-name" required class="w-50 form-sphere" type="text" 
                             name="firstname">
                         </div>
 
                         <div class="m-10px d-flex">
-                            <label class="w-50 fw-bold">Телефон:</label> 
-                            <input class="w-50 form-sphere" type="tel" name="phone">
+                            <label for="user-phone" class="w-50 fw-bold">Телефон:</label> 
+                            <input id="user-phone" class="w-50 form-sphere" type="tel" name="phone">
                         </div>
                         
                         <div class="m-10px d-flex">
-                            <label class="w-50 fw-bold">E-mail:</label> 
-                            <input required class="w-50 form-sphere" type="email" name="email">
+                            <label for="user-email" class="w-50 fw-bold">E-mail:</label> 
+                            <input for="user-email"  required class="w-50 form-sphere" type="email" name="email">
                         </div>
                     </fieldset>
                     <button class="m-10px button btn-green">Отправить</button>
@@ -169,13 +175,13 @@
 
         </main> <!-- Основаня часть страницы -->
 
-        <footer class="footer c-white d-flex f-center"> <!-- Футер -->
+        <footer class="footer c-white d-flex"> <!-- Футер -->
             
             <div class="container d-flex f-space-between">
                 <div class="footer-logo">
                     <div class="d-flex f-align-center">
-                        <img class="display-inline align-middle" src="images/logo.svg" alt="логотип сайта" height="32" width="32"> <!-- Логтотип сайта -->
-                        <p class="ml-5px">Лунное&nbsp;море</p>
+                        <img class="display-inline p-2" src="images/logo.svg" alt="логотип сайта" height="32" width="32"> <!-- Логтотип сайта -->
+                        <p class="p-2">Лунное&nbsp;море</p>
                     </div>
                     <p class="m-0">© 2032</p>
                 </div>

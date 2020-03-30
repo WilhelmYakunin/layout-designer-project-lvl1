@@ -3,8 +3,14 @@ padding: 0px;
 margin: 0px;
 font-size: 16px;
 color: #303846;
-font-family: Arial, Helvetica, sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+"Helvetica Neue", Arial, "Noto Sans", sans-serif, 
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 line-height: 1.5;
+}
+
+h1,h2 {
+  line-height: 1.2;
 }
 
 a:hover {
@@ -12,45 +18,35 @@ a:hover {
   color: blueviolet;
 }
 
-.align-middle {
-vertical-align: middle;
-}
-
 .text-center {
 text-align: center;
 }
 
+.f-align-center {
+  align-items: center;
+}
+
 .btn-green {
-border:2px solid #61cbb7;
+border: 2px solid #61cbb7;
 color: #61cbb7; 
 }
 
 .header {
 position: fixed;
-top: 0px;
+top: 0;
 width: 100%;
 background-color: white;
 font-size: 14px;
-height: 50px;
+box-sizing: border-box;
+padding: 0px 20px;
 }
 
 .f-space-between {
-flex-direction: row;
 justify-content: space-between;
-align-items: center;
 }
 
 .dark-grey {
 color: #303846;
-}
-
-.header-logo {
-margin-left: 0;
-display: inline-block;
-}
-
-.display-inline {
-display: inline;
 }
 
 .ls-none {
@@ -76,23 +72,11 @@ font-weight: bold;
 width: fill-available;
 }
 
-.mb-10 {
-  margin-bottom: 10%;
+.mt-4 {
+margin-top: 4%;
 }
 
-.mr-15px {
-  margin-right: 15px;
-}
-
-.mt-10 {
-margin-top: 10%;
-}
-
-.mt-50px {
-  margin-top: 50px;
-}
-
-.banner-text {
+.fs-18px {
 font-size: 18px;
 }
 
@@ -102,12 +86,9 @@ color: white;
 }
 
 .container {
-margin: 30px;
+margin: 0 auto;
+padding: 3%;
 width: 1000px;
-}
-
-.f-center {
-justify-content: center;
 }
 
 .f-space-around {
@@ -126,20 +107,16 @@ padding: 1%;
   padding: 2%;
 }
 
+.border-green {
+  border: 2px solid #61cbb7;
+}
+
 .background-grey {
 background-color:#f7f7f7;
 }
 
 .m-10px {
 margin: 10px;
-}
-
-.fs-22px {
-font-size: 22px;
-}
-
-.fs-20px {
-font-size: 20px;
 }
 
 .fw-900 {
@@ -154,6 +131,14 @@ font-weight: bold;
 width: 33%;
 }
 
+.fs-26px {
+  font-size: 26px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
 .m-auto {
 margin: auto;
 }
@@ -166,20 +151,12 @@ display: flex;
 flex-direction: column;
 }
 
-.f-start {
-justify-content: flex-start;
-}
-
 .w-50 {
 width: 50%;
 }
 
 .w-40 {
 width: 40%;
-}
-
-.pt-5 {
-  padding-top: 5%;
 }
 
 .form-sphere {
@@ -202,7 +179,6 @@ font-weight: bold;
 }
 
 .footer {
-
 font-size: 14px;
 background-color: #303846;
 }
@@ -214,14 +190,6 @@ margin-block-start: 0.5em;
 .footer-logo {
 display: flex;
 flex-direction: column;
-}
-
-.f-align-center {
-align-items: center;
-}
-
-.ml-15px {
-margin-left: 15px;
 }
 
 .m-0 {

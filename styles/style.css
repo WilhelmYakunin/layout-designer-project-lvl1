@@ -65,7 +65,7 @@ a:hover
 {
 	align-items: center;
 	background-image: url("../images/banner.png");
-	background-position: 5% 70%;
+	background-position: 0.001% 70%;
 	background-size: 125%;
 	flex-direction: column;
 	font-weight: bold;

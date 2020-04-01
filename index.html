@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <header class="header d-flex f-space-between"> <!-- Хэдер -->
+        <header class="header d-flex f-space-between f-align-center height-fit"> <!-- Хэдер -->
             <div class="d-flex f-align-center"> <!-- Лого -->
                 <img class="p-2" src="images/logo.svg" 
                 alt="логотип сайта" height="32" width="32"> 
@@ -22,7 +22,7 @@
             </div> <!-- Лого -->
         
             <nav> <!-- Меню навигации -->
-                <ul class="d-flex">
+                <ul class="d-flex m-0 p-0">
                     <li class="ls-none m-10px"><a class="text-decoration-none dark-grey" 
                         href="#mainContent">Преимущества</a>
                     </li>
@@ -32,24 +32,23 @@
                     </li>
 
                     <li class="ls-none m-10px"><a class="text-decoration-none dark-grey" 
-                        onclick="location.href=&#39;#placesToRest&#39;">Места для отдыха</a>
+                        href="#placesToRest">Места для отдыха</a>
                     </li>
             </ul>
                               
             </nav> <!-- Меню навигации-->
         </header> <!-- Хэдер -->
     
-        <main class="mt-5"> <!-- Основаня часть страницы -->
-            <div class="banner d-flex mb-5"> <!-- Баннер с кнопкой -->
+        <main class="margin-fit"> <!-- Основаня часть страницы -->
+            <div class="preview d-flex mb-5"> <!-- Баннер с кнопкой -->
                 <div class="container text-center">
                     <img src="images/logo.svg" alt="логотип сайта" height="120" width="120">
                     <div class="fs-18px text-center c-white p-2">
                     <h1 class="m-0">ЖК «Лунное море»</h1>
                     <p class="m-0">Место, откуда не хочется улетать</p>
                     </div>
-                    <a class="button btn-white" 
-                    onclick="location.href=&#39;#booking-form&#39;" 
-                    type="button">Забронировать</a>
+                    <a class="button btn-white text-decoration-none" 
+                    href="#booking-form">Забронировать</a>
                 </div>
             </div> <!-- Баннер с кнопкой -->
 
@@ -128,7 +127,7 @@
                 <div class="container d-flex">
                     
                     <form class="user rooms w-40 m-auto" autocomplete="on" action="#" method="POST">
-                        <p class="fs-26px fw-bold text-center">Оставьте заявку сегодня!</p>
+                        <h2 class="fw-bold text-center">Оставьте заявку сегодня!</h2>
                     <fieldset class="m-10px d-flex flex-column border-green">
                         <legend class="fs-20px fw-bold color-green">Параметры квартиры</legend>
                             <div class="m-10px d-flex">

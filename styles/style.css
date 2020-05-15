@@ -75,6 +75,7 @@ a:hover
 	background-image: url("../images/banner.png");
 	background-position: 0.001% 70%;
 	background-size: 125%;
+	background-repeat: no-repeat;
 	flex-direction: column;
 	font-weight: bold;
 	justify-content: center;
